@@ -1,0 +1,41 @@
+body {
+  padding-left: 11em;
+  color: purple;
+  background-color: yellow;
+}
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+}
+ul.styled {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 140px;
+}
+p {
+  font-size: 20px;
+}
+ul.styled li {
+  background: white;
+  margin: 7px 0;
+  padding: 5px;
+  border-right: 15px solid black;
+}
+ul.styled a {
+  text-decoration: none;
+}
+address {
+  padding-top: 15px;
+  border-top: thin dotted;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}

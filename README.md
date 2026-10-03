@@ -42,16 +42,27 @@ its default README.
 | `dice/` | Android dice roller in Kotlin, Gradle build |
 | `SI-GuidedProject-580176-1695307239/` | SmartInternz guided project — a login page |
 
-## Still live
+## Running demos
 
-Five of these had GitHub Pages sites and were kept running at their original
-URLs, so existing links still work:
+Five of these are served from this repository's GitHub Pages site:
 
-- https://pranavuppuluri.github.io/assignment1/
-- https://pranavuppuluri.github.io/assignment2/
-- https://pranavuppuluri.github.io/React-tasks/
-- https://pranavuppuluri.github.io/Intern_React_Task-1-main/
-- https://pranavuppuluri.github.io/React_Color_Picker-main/
+**https://pranavuppuluri.github.io/university/**
+
+| Demo | Source |
+| --- | --- |
+| [CSS exercises](https://pranavuppuluri.github.io/university/demos/assignment1/) | `projects/assignment1` |
+| [JavaScript exercises](https://pranavuppuluri.github.io/university/demos/assignment2/) | `projects/assignment2` |
+| [Task list](https://pranavuppuluri.github.io/university/demos/react-tasks/) | `projects/React-tasks` |
+| [Internship task](https://pranavuppuluri.github.io/university/demos/intern-task-1/) | `projects/Intern_React_Task-1-main` |
+| [Colour picker](https://pranavuppuluri.github.io/university/demos/color-picker/) | `projects/React_Color_Picker-main` |
+
+The two React apps are built from source into `demos/`, with `homepage` set to
+`.` so their assets resolve under the subpath. The other three are plain HTML and
+are served as they are.
+
+> These previously had their own repositories and their own Pages sites at
+> `pranavuppuluri.github.io/<name>/`. Those URLs no longer resolve — the demos
+> moved here.
 
 ## Notes on the archive
 

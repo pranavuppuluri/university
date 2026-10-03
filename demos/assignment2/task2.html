@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <title>Builderz</title>
+    <!-- Include Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>.navbar {
+        background-color: rgb(247, 169, 0) !important;
+    }</style>
+    
+</head> 
+<body>
+
+<!-- Header -->
+
+<!-- Header -->
+<header class="bg-light text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-left">
+                <h1 class="header-title">Builderz</h1> <!-- Apply the custom class here -->
+            </div>
+            <div class="col-md-6 header-contact-info text-right"> <!-- Use Bootstrap class "text-right" -->
+                <div class="contact-left float-left"> <!-- Use Bootstrap class "float-left" -->
+                    <img src="clock.png" alt="Clock Icon" width="20" height="20">
+                    <span>Opening Hours: 9 AM - 5 PM</span>
+                    <img src="phone.png" alt="Phone Icon" width="20" height="20">
+                    <span>Call Us: (123) 456-7890</span>
+                </div>
+                <div class="contact-right float-left"> <!-- Use Bootstrap class "float-left" -->
+                    <img src="email.png" alt="Email Icon" width="20" height="20">
+                    <span>Email Us: info@example.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PAGES</a>
+                </li>
+                <lli class="nav-item" style="margin-right: 600px;"> <!-- Add margin-right here -->
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+            
+            <!-- Shift the "Get a Quote" button to the rightmost position -->
+            <div class="ml-auto">
+                <a href="#" class="btn bg-light">Get a Quote</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Image -->
+<style>
+    .hero {
+        position: relative;
+        height: 500px; /* Adjust the height as needed */
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Ensure the overlay is below the content */
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto; /* This will make the image scale proportionally */
+        z-index: 0; /* Ensure the image is above the overlay */
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 2; /* Ensure the text is above the overlay */
+        padding: 20px; /* Add some padding to create space around the text */
+        border-radius: 10px; /* Add rounded corners for the background */
+    }
+
+    .hero-text h2,
+    .hero-text p {
+        margin: 0; /* Remove default margins for the heading and paragraph */
+    }
+</style>
+
+<style>
+    .hero-text {
+        background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+        padding: 20px; /* Add some padding to create space around the text */
+        border-radius: 10px; /* Add rounded corners for the background */
+        color: white; /* Text color */
+    }
+
+    .hero-text h2,
+    .hero-text p {
+        margin: 0; /* Remove default margins for the heading and paragraph */
+    }
+</style>
+
+<section class="hero text-center py-5">
+    <img src="builderz.jpeg" alt="Builderz Image" class="img-fluid">
+    <div class="hero-text">
+        <h2>We Are Professional</h2>
+        <p>For Your Dream Project</p>
+        <a href="#" class="btn bg-light">Get a Quote</a>
+    </div>
+</section>
+
+<!-- Three Sections at the Bottom -->
+
+<!-- Remove the container and adjust CSS for full-width -->
+<section class="bottom-sections py-5 full-width">
+    <div class="row">
+        <div class="col-md-4 blue-bg">
+            <h3>Expert Workers</h3>
+            <p>Lorem ipsum dolor sit amet, elit. Phasus nec pretim ornare velit non.</p>
+        </div>
+        <div class="col-md-4 yellow-bg">
+            <h3>Quality Work</h3>
+            <p>Lorem ipsum dolor sit amet, elit. Phasus nec pretim ornare velit non.</p>
+        </div>
+        <div class="col-md-4 blue-bg">
+            <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, elit. Phasus nec pretim ornare velit non.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Include Bootstrap JS (jQuery and Popper.js are required) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task 1</title>
+    <style>
+      div {
+        border: 1px solid;
+        display: block;
+        width: 300px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        Enter number : <input type="number" id="num" /><br /><br />
+        <input type="button" onClick="rev()" value="Reverse the number" />
+      </form>
+      <p>
+        The Result is :
+        <span id="ans"></span>
+      </p>
+    </div>
+    <script>
+      function rev() {
+        num1 = document.getElementById("num").value;
+        document.getElementById("ans").innerHTML = reverseNumber(num1);
+      }
+      function reverseNumber(num) {
+        let sum = 0;
+        while (num !== 0) {
+          sum = sum * 10;
+          sum = sum + (num % 10);
+          num = Math.floor(num / 10);
+        }
+        return sum;
+      }
+    </script>
+  </body>
+</html>
