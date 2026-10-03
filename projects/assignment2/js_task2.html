@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task 2</title>
+    <style>
+      div {
+        border: 1px solid;
+        display: block;
+        width: 300px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        Enter String : <input type="text" id="inp" /><br /><br />
+        <input type="button" onClick="sor()" value="Sort the string" />
+      </form>
+      <p>
+        The Result is :
+        <span id="ans"></span>
+      </p>
+    </div>
+    <script>
+      function sor() {
+        atr = document.getElementById("inp").value;
+        document.getElementById("ans").innerHTML = aplhabeticsort(atr);
+      }
+      function aplhabeticsort(str) {
+        let arr = str.split("");
+        arr.sort();
+        let ans = arr.join("");
+        return ans;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="#B65F7D"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#A3D4DA"
+        android:hint="Username"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#8BC3CA"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#432875"
+        android:padding="12dp"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/Amazon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#000000"
+        android:padding="12dp"
+        android:text="Amazon"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/Myntra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#000000"
+        android:padding="12dp"
+        android:text="Myntra"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/Nykaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="12dp"
+        android:text="Nykaa"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+/* Blue background */
+.blue-bg {
+    background-color: rgb(2, 2, 36);
+    color:rgb(247, 169, 0); /* Set text color to white for better visibility on blue background */
+}
+
+/* Yellow background */
+.yellow-bg {
+    background-color: rgb(247, 169, 0);
+    color: rgb(2, 2, 36) /* Set text color to black for better visibility on yellow background */
+}
+
+/* Custom CSS to style the header elements */
+.header-title {
+    color: black;
+    text-align: left;
+}
+
+.header-contact-info {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.header-contact-info img {
+    margin-right: 5px;
+}
+
+.header-contact-info span {
+    white-space: nowrap;
+    color: rgb(247, 169, 0);; /* Set the font color to black */
+}
+
+/* Set the background color to yellow for the header */
+/* Override Bootstrap background color for the header to yellow */
+
+
+
+
+
+
+

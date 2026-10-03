@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task 7</title>
+    <style>
+      h2 {
+        color: blue;
+        padding-left: 480px;
+      }
+      input#her {
+        margin-left: 730px;
+      }
+    </style>
+    <script type="text/javascript">
+      <!--
+      var imgObj = null;
+      var animate;
+      function init() {
+        imgObj = document.getElementById("myImg");
+        imgObj.style.position = "relative";
+        imgObj.style.left = "0px";
+      }
+      function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 3 + "px";
+        animate = setTimeout(moveRight, 12);
+      }
+      function stop() {
+        clearTimeout(animate);
+        imgObj.style.left = "0px";
+      }
+      window.onload = init;
+      //-->
+    </script>
+  </head>
+  <body>
+    <form>
+      <img id="myImg" src="car.png" />
+      <div id="bi">
+        <h2>Click the buttons below to manage the automated animation</h2>
+        <input id="her" type="button" value="Start" onclick="moveRight();" />
+        <input type="button" value="Stop" onclick="stop();" />
+      </div>
+    </form>
+  </body>
+</html>

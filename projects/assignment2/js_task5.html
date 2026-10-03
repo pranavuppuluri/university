@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task 5</title>
+    <style>
+      .error {
+        color: red;
+      }
+
+      .invalid {
+        border: 1px solid red;
+      }
+      form {
+        padding-left: 400px;
+        padding-top: 100px;
+      }
+      label {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <span id="nameError" class="error"></span><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <span id="emailError" class="error"></span><br /><br />
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" />
+      <span id="websiteError" class="error"></span><br /><br />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <span id="messageError" class="error"></span><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var website = document.getElementById("website").value;
+        var message = document.getElementById("message").value;
+
+        var isValid = true;
+
+        if (name === "") {
+          document.getElementById("nameError").innerHTML =
+            "This field is required";
+          document.getElementById("name").classList.add("invalid");
+          isValid = false;
+        } else {
+          document.getElementById("nameError").innerHTML = "";
+          document.getElementById("name").classList.remove("invalid");
+        }
+
+        if (email === "") {
+          document.getElementById("emailError").innerHTML =
+            "A valid email address is required";
+          document.getElementById("email").classList.add("invalid");
+          isValid = false;
+        } else {
+          document.getElementById("emailError").innerHTML = "";
+          document.getElementById("email").classList.remove("invalid");
+        }
+
+        if (website === "") {
+          document.getElementById("websiteError").innerHTML =
+            "A valid URL is required";
+          document.getElementById("website").classList.add("invalid");
+          isValid = false;
+        } else {
+          document.getElementById("websiteError").innerHTML = "";
+          document.getElementById("website").classList.remove("invalid");
+        }
+
+        if (message === "") {
+          document.getElementById("messageError").innerHTML =
+            "This field is required";
+          document.getElementById("message").classList.add("invalid");
+          isValid = false;
+        } else {
+          document.getElementById("messageError").innerHTML = "";
+          document.getElementById("message").classList.remove("invalid");
+        }
+
+        return isValid;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task 6</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-top: 60px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .form-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .icon-person,
+      .icon-lock {
+        margin-right: 10px;
+        font-size: 24px;
+      }
+
+      label {
+        display: none;
+      }
+
+      .input-container {
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px 30px 10px 40px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .icon-input {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #ccc;
+      }
+
+      .error {
+        color: red;
+      }
+
+      .form-options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      .remember-me {
+        display: flex;
+        align-items: center;
+      }
+
+      .forgot-password {
+        color: #0095f6;
+        text-decoration: none;
+      }
+
+      .signup-link {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .signup-link a {
+        color: #0095f6;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      button {
+        background-color: #0095f6;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #0082cc;
+      }
+
+      .input-container {
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      .icon-input {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-size: 18px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: serif;
+        font-style: italic;
+        font-size: 50px;
+      }
+
+      .input-container {
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      .icon-input {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-size: 18px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 80%;
+        padding: 10px 30px 10px 40px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .signup-link {
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Instagram</h2>
+      <form id="loginForm">
+        <div class="input-container">
+          <span class="icon-input">&#128100;</span>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <span class="icon-input">&#128274;</span>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <span id="loginError" class="error"></span>
+        <button type="submit">Log In</button>
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" id="rememberMe" /> Remember Me
+          </label>
+          <a class="forgot-password" href="#">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+    <div class="signup-link">
+      Don't have an account? <a href="#">Sign up here</a>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+
+          var isValid = true;
+
+          if (username === "") {
+            document.getElementById("username").classList.add("invalid");
+            isValid = false;
+          } else {
+            document.getElementById("username").classList.remove("invalid");
+          }
+
+          if (password === "") {
+            document.getElementById("password").classList.add("invalid");
+            isValid = false;
+          } else {
+            document.getElementById("password").classList.remove("invalid");
+          }
+
+          if (isValid) {
+            document.getElementById("loginError").innerHTML =
+              "Login successful!";
+          } else {
+            document.getElementById("loginError").innerHTML =
+              "Please fill in all fields.";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task 3</title>
+    <style>
+      div {
+        border: 1px solid;
+        display: block;
+        width: 300px;
+        margin: auto;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        1st Number : <input type="number" id="first" /><br />
+        2nd Number : <input type="number" id="sec" /><br />
+        <input type="button" onClick="mul()" value="Multiply" />
+        <input type="button" onClick="div()" value="Divide" />
+      </form>
+      <p>
+        The Result is : <br />
+        <span id="ans"></span>
+      </p>
+    </div>
+    <script>
+      function mul() {
+        num1 = document.getElementById("first").value;
+        num2 = document.getElementById("sec").value;
+        document.getElementById("ans").innerHTML = num1 * num2;
+      }
+
+      function div() {
+        num1 = document.getElementById("first").value;
+        num2 = document.getElementById("sec").value;
+        document.getElementById("ans").innerHTML = num1 / num2;
+      }
+    </script>
+  </body>
+</html>
