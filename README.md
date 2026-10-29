@@ -42,6 +42,17 @@ its default README.
 | `dice/` | Android dice roller in Kotlin, Gradle build |
 | `SI-GuidedProject-580176-1695307239/` | SmartInternz guided project — a login page |
 
+### University projects (2024)
+
+Course projects and lab notebooks from 2024, in `university-projects/`. Each
+folder has its own README. Datasets are not included.
+
+| Folder | What it is |
+| --- | --- |
+| `arsenic-detection-swin/` | Swin transformer for arsenic detection, with CeiT, CaiT, DeiT, T2T and TnT comparisons |
+| `speech-language-processing/` | Text classification comparison, BERT fine tuning, sentiment analysis, Watson speech to text |
+| `medicine-side-effects/` | Side effects lookup over a medicine dataset, with architecture doc |
+
 ## Running demos
 
 Five of these are served from this repository's GitHub Pages site:
