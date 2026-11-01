@@ -52,6 +52,8 @@ folder has its own README. Datasets are not included.
 | `arsenic-detection-swin/` | Swin transformer for arsenic detection, with CeiT, CaiT, DeiT, T2T and TnT comparisons |
 | `speech-language-processing/` | Text classification comparison, BERT fine tuning, sentiment analysis, Watson speech to text |
 | `medicine-side-effects/` | Side effects lookup over a medicine dataset, with architecture doc |
+| `pose-estimation/` | OpenPose script and SimplePose training on COCO keypoints |
+| `object-detection/` | YOLOv8 training and a CBAM attention CNN for drone images |
 
 ## Running demos
 
